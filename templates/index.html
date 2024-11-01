@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video Upload</title>
+  </head>
+  <body>
+    <h1>Upload Video for Processing</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="file" required />
+      <label for="count">Number of videos to generate:</label>
+      <input type="number" name="count" min="1" max="20" required />
+      <button type="submit">Upload</button>
+    </form>
+  </body>
+</html>
